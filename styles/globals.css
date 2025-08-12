@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-violet-light: #ede0ff;
+  --color-violet-dark: #4b0082;
+  /* --color-rose-light: #f8b7e3;
+  --color-rose-dark: #a500a1; */
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(:not(.dark), :not(.dark *)));
