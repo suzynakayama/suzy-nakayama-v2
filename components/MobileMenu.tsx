@@ -1,8 +1,7 @@
-// src/components/MobileMenu.tsx
 'use client';
 
 import { useState } from 'react';
-import { X, Menu } from 'lucide-react'; // ícones lucide
+import { X, Menu } from 'lucide-react';
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);

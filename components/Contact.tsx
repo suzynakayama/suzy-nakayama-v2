@@ -4,7 +4,7 @@ import { FileDown, Linkedin, Github } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
-    <section id='contact' className='flex flex-col items-center'>
+    <section id='contact' className='flex flex-col items-center h-[20vh]'>
       <h3 className='font-head text-3xl mb-6'>Contact Me</h3>
       <div className='flex gap-5'>
         <Link

@@ -1,25 +1,17 @@
 'use client';
+import Button from './Button';
+import { useTheme } from 'next-themes';
 
-import { useEffect } from 'react';
-
-interface ThemeToggleProps {
-  isDark: boolean;
-  setIsDark: (isDark: boolean) => void;
-}
-
-const ThemeToggle = ({ isDark, setIsDark }: ThemeToggleProps) => {
-  useEffect(() => {
-    const root = window.document.documentElement;
-    root.classList.toggle('dark', isDark);
-  }, [isDark]);
+const ThemeToggle = () => {
+  const { theme, setTheme } = useTheme();
 
   return (
-    <button
-      onClick={() => setIsDark(!isDark)}
-      className='p-2 rounded hover:bg-violet-light transition'
+    <Button
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      className='p-2 rounded hover:bg-violet-light dark:hover:bg-violet-dark transition'
     >
-      {isDark ? '🌙 Dark' : '☀️ Light'}
-    </button>
+      {theme === 'dark' ? '🌙 Dark' : '☀️ Light'}
+    </Button>
   );
 };
 

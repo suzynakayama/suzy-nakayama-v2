@@ -2,9 +2,8 @@
 
 @theme {
   --color-violet-light: #ede0ff;
-  --color-violet-dark: #4b0082;
-  /* --color-rose-light: #f8b7e3;
-  --color-rose-dark: #a500a1; */
+  /* --color-violet-dark: #4b0082; */
+  --color-violet-dark: #523577;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

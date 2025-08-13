@@ -7,9 +7,12 @@ import Contact from '../../components/Contact';
 const Home = () => {
   // This is the main page component for the application.
   return (
-    <div className='min-h-screen flex flex-col'>
+    <div
+      className='min-h-screen flex flex-col bg-white dark:bg-black text-violet-dark 
+  dark:text-violet-light'
+    >
       <Header />
-      <main className='flex-1 px-4 sm:px-6 lg:px-12 py-8 space-y-16 lg:pr-46 lg:pl-46 lg:pt-20'>
+      <main className='flex-1 space-y-16'>
         <Hero />
 
         <Projects />

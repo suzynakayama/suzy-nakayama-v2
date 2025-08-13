@@ -4,7 +4,10 @@ import profilePhoto from '../public/images/suzy-profile.jpg';
 
 const Hero: React.FC = () => {
   return (
-    <section className='grid items-center text-center pt-6 md:pt-0 grid-cols-1 md:grid-cols-2'>
+    <section
+      id='hero'
+      className='grid text-center mt-20 pt-24 md:pt-60 grid-cols-1 md:grid-cols-2 h-[100vh] bg-violet-light dark:bg-violet-dark'
+    >
       <div className='md:justify-self-end'>
         <h2 className='font-head text-3xl sm:text-4xl lg:text-5xl'>
           Hi, I am Suzy Nakayama
@@ -17,11 +20,11 @@ const Hero: React.FC = () => {
         </p>
       </div>
 
-      <div className='flex justify-center pt-8 md:pt-0'>
+      <div className='flex justify-center md:pt-0'>
         <Image
           src={profilePhoto}
           alt='Suzy Nakayama'
-          className='w-36 h-48 md:w-40 md:h-56 rounded-full border-4 border-violet-light'
+          className='w-36 h-48 md:w-40 md:h-56 rounded-full border-4 border-violet-light shadow-md'
         />
       </div>
     </section>
