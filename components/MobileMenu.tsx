@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { X, Menu } from 'lucide-react';
+import Link from 'next/link';
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
@@ -14,7 +15,7 @@ const MobileMenu = () => {
         className='p-2 rounded transition md:hidden'
         aria-label='Open menu'
       >
-        <Menu size={24} className='text-violet-dark' />
+        <Menu size={24} className='text-violet-dark dark:text-violet-light' />
       </button>
 
       {/* Overlay */}
@@ -33,7 +34,7 @@ const MobileMenu = () => {
               <button
                 onClick={() => setOpen(false)}
                 aria-label='Close menu'
-                className='p-2 rounded hover:bg-rose-light transition'
+                className='p-2 rounded transition'
               >
                 <X
                   size={24}
@@ -44,31 +45,31 @@ const MobileMenu = () => {
 
             <ul className='space-y-6 font-body text-lg'>
               <li>
-                <a
+                <Link
                   href='#about'
                   onClick={() => setOpen(false)}
-                  className='hover:underline'
+                  className='hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-dark dark:focus-visible:outline-violet-light'
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='#projects'
                   onClick={() => setOpen(false)}
-                  className='hover:underline'
+                  className='hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-dark dark:focus-visible:outline-violet-light'
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='#contact'
                   onClick={() => setOpen(false)}
-                  className='hover:underline'
+                  className='hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-dark dark:focus-visible:outline-violet-light'
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

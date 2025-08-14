@@ -7,6 +7,8 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../../../components/Button';
+import Footer from '../../../components/Footer';
+import NotFound from '../not-found';
 
 const project = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
@@ -39,11 +41,11 @@ const project = async ({ params }: { params: Promise<{ slug: string }> }) => {
   return (
     <div
       className='p-10 flex flex-col bg-white dark:bg-black text-violet-dark 
-  dark:text-violet-light'
+  dark:text-violet-light  '
     >
       <Link
         href='/#projects'
-        className='mb-8 text-violet-dark dark:text-violet-light text-sm'
+        className='mb-8 text-violet-dark dark:text-violet-light text-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-dark dark:focus-visible:outline-violet-light'
       >
         ← Back to Projects
       </Link>
@@ -57,7 +59,7 @@ const project = async ({ params }: { params: Promise<{ slug: string }> }) => {
             alt={project.name}
             width={150}
             height={150}
-            className='self-center rounded-md'
+            className='self-center rounded-md transition-opacity'
           />
           <div className='w-[85vw] md:w-[75vw] self-center'>
             <p className='text-md md:text-lg mt-8 text-justify'>
@@ -88,8 +90,9 @@ const project = async ({ params }: { params: Promise<{ slug: string }> }) => {
           </div>
         </>
       ) : (
-        <p>Project not found</p>
+        <NotFound />
       )}
+      <Footer />
     </div>
   );
 };

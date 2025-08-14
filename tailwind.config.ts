@@ -13,7 +13,6 @@ const config: Config = {
       colors: {
         'violet-light': '#EDE0FF',
         'violet-dark': '#4B0082',
-        'rose-light': '#F8B7E3',
       },
     },
   },

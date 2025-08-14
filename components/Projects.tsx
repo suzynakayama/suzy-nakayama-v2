@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 
 const Projects = () => {
   return (
-    <section id='projects' className='px-10 h-full scroll-mt-26'>
+    <section id='projects' className='px-4 sm:px-10 h-full scroll-mt-24'>
       <h3 className='font-head text-3xl mb-8 text-center'>Projects</h3>
       <h4 className='text-2xl mb-8 text-center'>Professional Projects</h4>
       <div className='grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
