@@ -17,7 +17,6 @@ const project = async ({ params }: { params: Promise<{ slug: string }> }) => {
     project => project.slug === slug
   );
   const isProfessional = project && 'technologies' in project;
-  console.log(isProfessional, project);
 
   const professionalProjectInfo = () => {
     if (!project) return null;
