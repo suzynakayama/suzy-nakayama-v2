@@ -46,7 +46,7 @@ export const projects: Projects = [
     name: 'Portfolio v1',
     image: '/images/portfolio-v1.png',
     slug: 'portfolio-v1',
-    url: 'https://suzynakayama.github.io/Suzy-Nakayama-v1/',
+    url: 'https://suzynakayama-v1.netlify.app/',
     git: 'https://github.com/suzynakayama/Suzy-Nakayama-v1',
     description: 'First version of my portfolio.',
     difficulties: '',
