@@ -5,12 +5,13 @@ import Image from 'next/image';
 
 type ProjectCardProps = {
   project: ProjectTypes;
+  appPage: boolean;
 };
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project, appPage }: ProjectCardProps) => {
   return (
     <Link
-      href={`/${project.slug}`}
+      href={appPage ? `/apps/${project.slug}` : `/${project.slug}`}
       className='p-4 border-4 border-violet-light rounded-3xl hover:shadow-lg dark:hover:shadow-violet-light/40 transition-shadow text-center grid grid-cols-1 gap-2 min-h-[200px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-dark dark:focus-visible:outline-violet-light'
     >
       <h1 className='text-lg'>{project.name}</h1>

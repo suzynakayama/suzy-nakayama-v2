@@ -8,6 +8,7 @@ export interface PersonalProject {
 }
 
 export interface Project extends PersonalProject {
+  app?: boolean;
   git?: string;
   difficulties: string;
   technologies: string;
@@ -22,6 +23,7 @@ export const projects: Projects = [
     name: 'Tiny Dose',
     image: '/images/tiny-dose.png',
     slug: 'tiny-dose',
+    app: true,
     git: 'https://github.com/suzynakayama/tiny-dose-public',
     description:
       'Mobile app for calculating children Ibuprofen and Acetaminophen doses according to CHEO guidelines.',
