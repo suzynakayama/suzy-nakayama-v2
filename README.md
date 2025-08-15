@@ -1,4 +1,4 @@
-[Portfolio V2 Live](https://www.suzynakayama.com)
+[Portfolio V2 Live](https://main.d9y18rva44lxm.amplifyapp.com)
 
 [Portfolio V2 Code](https://github.com/suzynakayama/suzy-nakayama-v2) - Tech: Next.js, Typescript, Tailwind, deployed with AWS Amplify.
 
