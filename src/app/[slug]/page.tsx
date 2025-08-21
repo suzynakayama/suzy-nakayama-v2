@@ -40,7 +40,7 @@ const project = async ({ params }: { params: Promise<{ slug: string }> }) => {
   return (
     <div
       className='p-10 flex flex-col bg-white dark:bg-black text-violet-dark 
-  dark:text-violet-light'
+  dark:text-violet-light h-[100vh]'
     >
       <Link
         href='/#projects'

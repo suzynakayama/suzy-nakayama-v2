@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
           Full-Stack Software Engineer
         </p>
         <p className='font-body mt-2 text-sm sm:text-base lg:text-md'>
-          Typescript | Python | React
+          Typescript | Python | React | React Native
         </p>
       </div>
 
