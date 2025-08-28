@@ -1,3 +1,5 @@
+import { Book } from './books';
+
 export interface PersonalProject {
   name: string;
   image: string;
@@ -16,7 +18,7 @@ export interface Project extends PersonalProject {
 
 export type PersonalProjects = PersonalProject[];
 export type Projects = Project[];
-export type ProjectTypes = Project | PersonalProject;
+export type ProjectTypes = Project | PersonalProject | Book;
 
 export const projects: Projects = [
   {
