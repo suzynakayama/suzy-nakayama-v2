@@ -72,18 +72,18 @@ const project = async ({ params }: { params: Promise<{ slug: string }> }) => {
             )}
             <div className='mt-4 self-center flex flex-row justify-center'>
               {project.url && (
-                <Button className='border-2 border-violet-light m-4 pl-3 pr-3 hover:shadow-lg dark:hover:shadow-violet-light/40'>
-                  <Link href={project.url} target='_blank'>
+                <Link href={project.url} target='_blank'>
+                  <Button className='border-2 border-violet-light m-4 pl-3 pr-3 hover:shadow-lg dark:hover:shadow-violet-light/40'>
                     View Project
-                  </Link>
-                </Button>
+                  </Button>
+                </Link>
               )}
               {isProfessional && project.git && (
-                <Button className='border-2 border-violet-light m-4 pl-3 pr-3 hover:shadow-lg dark:hover:shadow-violet-light/40'>
-                  <Link href={project.git} target='_blank'>
+                <Link href={project.git} target='_blank'>
+                  <Button className='border-2 border-violet-light m-4 pl-3 pr-3 hover:shadow-lg dark:hover:shadow-violet-light/40'>
                     View Code
-                  </Link>
-                </Button>
+                  </Button>
+                </Link>
               )}
             </div>
           </div>

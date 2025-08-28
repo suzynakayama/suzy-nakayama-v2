@@ -14,14 +14,14 @@ const Book = async ({ params }: { params: Promise<{ slug: string }> }) => {
   if (book && book.url) {
     for (const key in book.url) {
       buttons.push(
-        <Button
-          key={key}
-          className='border-2 border-violet-light m-4 pl-3 pr-3 hover:shadow-lg dark:hover:shadow-violet-light/40'
-        >
-          <Link href={book.url[key].link} target='_blank'>
+        <Link href={book.url[key].link} target='_blank'>
+          <Button
+            key={key}
+            className='border-2 border-violet-light m-4 pl-3 pr-3 hover:shadow-lg dark:hover:shadow-violet-light/40'
+          >
             {book.url[key].btn}
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       );
     }
   }

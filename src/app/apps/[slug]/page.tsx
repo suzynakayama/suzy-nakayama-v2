@@ -43,11 +43,11 @@ const App = async ({ params }: { params: Promise<{ slug: string }> }) => {
             )}
             <div className='mt-4 self-center flex flex-row justify-center'>
               {app.url && (
-                <Button className='border-2 border-violet-light m-4 pl-3 pr-3 hover:shadow-lg dark:hover:shadow-violet-light/40'>
-                  <Link href={app.url} target='_blank'>
+                <Link href={app.url} target='_blank'>
+                  <Button className='border-2 border-violet-light m-4 pl-3 pr-3 hover:shadow-lg dark:hover:shadow-violet-light/40'>
                     View App in Play Store
-                  </Link>
-                </Button>
+                  </Button>
+                </Link>
               )}
             </div>
           </div>
