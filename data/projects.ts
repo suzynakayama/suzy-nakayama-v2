@@ -65,7 +65,7 @@ export const personalProjects: PersonalProjects = [
     slug: 'benny',
     url: 'https://a.co/d/8DkFZvh',
     description:
-      "A rhyming children's book about a super-bright adventure that turns daily hygiene into pure fun. Also available in Brazilian Portuguese and French.",
+      "A rhyming children's book about a super-bright adventure that turns daily hygiene into pure fun. Also available in Brazilian Portuguese, Spanish, and French.",
   },
   {
     name: 'Little Words, Grands Amis',

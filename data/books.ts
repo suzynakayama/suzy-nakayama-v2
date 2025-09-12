@@ -27,7 +27,7 @@ export const books: Book[] = [
       },
     },
     description:
-      "A rhyming children's book about a super-bright adventure that turns daily hygiene into pure fun. Also available in Brazilian Portuguese and French.",
+      "A rhyming children's book about a super-bright adventure that turns daily hygiene into pure fun. Also available in Brazilian Portuguese, Spanish, and French.",
   },
   {
     name: 'Benny e o Bichinho da Sujeira',
@@ -48,7 +48,7 @@ export const books: Book[] = [
       },
     },
     description:
-      'Um livro infantil com rimas sobre uma aventura superbrilhante que transforma a higiene diária em pura diversão. Também disponível em inglês e francês.',
+      'Um livro infantil com rimas sobre uma aventura superbrilhante que transforma a higiene diária em pura diversão. Também disponível em inglês, espanhol e francês.',
   },
   {
     name: 'Benny et la Petite Bête de la Saleté',
@@ -69,7 +69,24 @@ export const books: Book[] = [
       },
     },
     description:
-      "Un livre pour enfants avec des rimes sur une aventure super-brillante qui transforme l'hygiène quotidienne en pur plaisir. Également disponible en portugais brésilien et en anglais.",
+      "Un livre pour enfants avec des rimes sur une aventure super-brillante qui transforme l'hygiène quotidienne en pur plaisir. Également disponible en portugais brésilien, en espagnol et en anglais.",
+  },
+  {
+    name: 'Benny y el Bichito de la Suciedad',
+    image: '/images/benny-es.png',
+    slug: 'benny-es',
+    url: {
+      canada: {
+        btn: 'Ver el libro en Amazon Canada',
+        link: 'https://a.co/d/4J1uR2o',
+      },
+      us: {
+        btn: 'Ver el libro en Amazon US',
+        link: 'https://a.co/d/eAd6lKq',
+      },
+    },
+    description:
+      'Un libro infantil rimado sobre una aventura súper divertida que convierte la higiene diaria en pura diversión. También disponible en portugués brasileño, inglés y francés.',
   },
   {
     name: 'Little Words, Grands Amis',
