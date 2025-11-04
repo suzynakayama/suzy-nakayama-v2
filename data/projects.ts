@@ -18,6 +18,7 @@ export interface Project extends PersonalProject {
 
 export type PersonalProjects = PersonalProject[];
 export type Projects = Project[];
+export type VibeCodingProjects = Project[];
 export type ProjectTypes = Project | PersonalProject | Book;
 
 export const projects: Projects = [
@@ -58,6 +59,35 @@ export const projects: Projects = [
   },
 ];
 
+export const vibeCodingProjects: Projects = [
+  {
+    name: "Fardousi's Home Daycare",
+    image: '/images/FK.png',
+    slug: 'fardousis-home-daycare',
+    url: 'https://fardousi-home-daycare.netlify.app/',
+    git: 'https://github.com/suzynakayama/fardousi-findleycreek-care',
+    description:
+      'Website for Fardousi’s Home Daycare, a licensed daycare located in Findley Creek, Ontario.',
+    difficulties:
+      "First time using Lovable and vibe coding, so I had to learn how to prompt the AI effectively to build the website according to the client's needs.",
+    technologies: 'React, Typescript, Vibe Coding, Lovable AI.',
+    tbr: false,
+  },
+  {
+    name: 'Caught You',
+    image: '/images/caught-you.png',
+    slug: 'caught-you',
+    app: true,
+    url: 'https://caught-you.netlify.app/',
+    git: 'https://github.com/suzynakayama/caught-you-ai',
+    description:
+      'Social game where AI playfully “detects lies” through bold questions and dramatic shareable reactions',
+    difficulties:
+      'Creating an engaging user experience while ensuring the AI responses were entertaining and appropriate was challenging.',
+    technologies: 'React, Typescript, Vibe Coding, Lovable AI.',
+  },
+];
+
 export const personalProjects: PersonalProjects = [
   {
     name: 'Benny and the Little Dirt Bug',
@@ -73,6 +103,15 @@ export const personalProjects: PersonalProjects = [
     slug: 'little-words',
     description:
       "This sweet bilingual children's book that helps children ages 3–7 discover basic vocabulary in English and French through playful dialogue and everyday moments.",
+    tbr: true,
+  },
+  {
+    name: 'Hey Vexa',
+    image: '/images/vexa.png',
+    slug: 'vexa',
+    url: 'https://www.tiktok.com/@hey_vexa',
+    description:
+      'TikTok channel exploring human behavior through an AI persona.',
     tbr: true,
   },
 ];

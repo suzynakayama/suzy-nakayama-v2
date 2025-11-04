@@ -3,6 +3,7 @@ import {
   projects,
   personalProjects,
   ProjectTypes,
+  vibeCodingProjects,
 } from '../../../data/projects';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,7 +13,11 @@ import NotFound from '../not-found';
 
 const project = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
-  const data: ProjectTypes[] = [...projects, ...personalProjects];
+  const data: ProjectTypes[] = [
+    ...projects,
+    ...vibeCodingProjects,
+    ...personalProjects,
+  ];
   const project: ProjectTypes | undefined = data.find(
     project => project.slug === slug
   );

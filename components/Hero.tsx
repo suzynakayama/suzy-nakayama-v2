@@ -13,10 +13,10 @@ const Hero: React.FC = () => {
           Hi, I am Suzy Nakayama
         </h2>
         <p className='font-body mt-4 text-sm sm:text-base lg:text-lg'>
-          Full-Stack Software Engineer
+          Full-Stack & AI-Ready Software Engineer
         </p>
         <p className='font-body mt-2 text-sm sm:text-base lg:text-md'>
-          Typescript | Python | React | React Native
+          Typescript | Python | React | React Native | AI Tools
         </p>
       </div>
 
