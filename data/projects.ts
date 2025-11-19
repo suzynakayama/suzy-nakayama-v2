@@ -109,9 +109,9 @@ export const personalProjects: PersonalProjects = [
     name: 'Hey Vexa',
     image: '/images/vexa.png',
     slug: 'vexa',
-    url: 'https://www.tiktok.com/@hey_vexa',
+    url: 'https://www.youtube.com/@hey_vexa',
     description:
-      'TikTok channel exploring human behavior through an AI persona.',
+      'YouTube channel exploring human behavior through an AI persona. Also available in TikTok and Instagram @hey_vexa.',
     tbr: true,
   },
 ];
