@@ -18,12 +18,16 @@ export const books: Book[] = [
     slug: 'benny-en',
     url: {
       canada: {
-        btn: 'View book on Amazon Canada',
-        link: 'https://a.co/d/2cJyDXY',
+        btn: 'View book on Amazon CA',
+        link: 'https://amzn.to/4ifQaqF',
       },
       us: {
         btn: 'View book on Amazon US',
-        link: 'https://a.co/d/hN6Cpxn',
+        link: 'https://amzn.to/3XbiBwf',
+      },
+      br: {
+        btn: 'View book on Amazon BR',
+        link: 'https://a.co/d/b1nrmtj',
       },
     },
     description:
@@ -35,16 +39,16 @@ export const books: Book[] = [
     slug: 'benny-pt',
     url: {
       canada: {
-        btn: 'Ver o livro na Amazon Canada',
-        link: 'https://a.co/d/eBHcDPm',
+        btn: 'Ver o livro na Amazon CA',
+        link: 'https://amzn.to/4rd2AUh',
       },
       us: {
         btn: 'Ver o livro na Amazon US',
-        link: 'https://a.co/d/bSzRW5P',
+        link: 'https://amzn.to/48fOZ60',
       },
       br: {
-        btn: 'Ver o livro no Clube de Autores',
-        link: 'https://clubedeautores.com.br/livro/benny-e-o-bichinho-da-sujeira',
+        btn: 'Ver o livro na Amazon BR',
+        link: 'https://a.co/d/hQ6MdZa',
       },
     },
     description:
@@ -56,16 +60,20 @@ export const books: Book[] = [
     slug: 'benny-fr',
     url: {
       canada: {
-        btn: 'Voir le livre sur Amazon Canada',
-        link: 'https://a.co/d/g0uGctW',
+        btn: 'Voir le livre sur Amazon CA',
+        link: 'https://amzn.to/4aanvB8',
       },
       us: {
         btn: 'Voir le livre sur Amazon US',
-        link: 'https://a.co/d/4xnzSGG',
+        link: 'https://amzn.to/4pthNPl',
       },
       fr: {
-        btn: 'Voir le livre sur Amazon France',
+        btn: 'Voir le livre sur Amazon FR',
         link: 'https://amzn.eu/d/hNl6exM',
+      },
+      br: {
+        btn: 'Voir le livre sur Amazon BR',
+        link: 'https://a.co/d/5GHY5ld',
       },
     },
     description:
@@ -77,12 +85,16 @@ export const books: Book[] = [
     slug: 'benny-es',
     url: {
       canada: {
-        btn: 'Ver el libro en Amazon Canada',
-        link: 'https://a.co/d/4J1uR2o',
+        btn: 'Ver el libro en Amazon CA',
+        link: 'https://amzn.to/3K37HFR',
       },
       us: {
         btn: 'Ver el libro en Amazon US',
-        link: 'https://a.co/d/eAd6lKq',
+        link: 'https://amzn.to/4oemRGe',
+      },
+      br: {
+        btn: 'Ver el libro en Amazon BR',
+        link: 'https://a.co/d/1zF03Lz',
       },
     },
     description:
