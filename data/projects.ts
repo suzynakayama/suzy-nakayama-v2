@@ -86,6 +86,28 @@ export const vibeCodingProjects: Projects = [
       'Creating an engaging user experience while ensuring the AI responses were entertaining and appropriate was challenging.',
     technologies: 'React, Typescript, Vibe Coding, Lovable AI.',
   },
+  {
+    name: 'Yukimitsu Books Landing Page',
+    image: '/images/yukimitsu-books.png',
+    slug: 'yukimitsu-books',
+    app: true,
+    url: 'https://yukimitsubooks.netlify.app/',
+    description:
+      'Yukimitsu Books official landing page to showcase the children books I wrote.',
+    difficulties: '',
+    technologies: 'React, Typescript, Vibe Coding, Lovable AI.',
+  },
+  {
+    name: 'Hey Vexa Landing Page',
+    image: '/images/hey-vexa.png',
+    slug: 'hey-vexa',
+    app: true,
+    url: 'https://heyvexa.netlify.app/',
+    description:
+      'Official landing page for Hey Vexa, my AI persona on YouTube and social media.',
+    difficulties: '',
+    technologies: 'React, Typescript, Vibe Coding, Lovable AI.',
+  },
 ];
 
 export const personalProjects: PersonalProjects = [
@@ -112,6 +134,5 @@ export const personalProjects: PersonalProjects = [
     url: 'https://www.youtube.com/@hey_vexa',
     description:
       'YouTube channel exploring human behavior through an AI persona. Also available in TikTok and Instagram @hey_vexa.',
-    tbr: true,
   },
 ];
