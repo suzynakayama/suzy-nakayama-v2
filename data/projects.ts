@@ -117,15 +117,15 @@ export const personalProjects: PersonalProjects = [
     slug: 'benny',
     url: 'https://amzn.to/4ifQaqF',
     description:
-      "A rhyming children's book about a super-bright adventure that turns daily hygiene into pure fun. Also available in Brazilian Portuguese, Spanish, and French. Follow Yukimitsu Books Instagram @yukimitsubooks for updates.",
+      "A rhyming children's book about a super-bright adventure that turns daily hygiene into pure fun. Also available in Brazilian Portuguese, Spanish, and French. Follow Yukimitsu Books on Instagram @yukimitsubooks for updates.",
   },
   {
     name: 'Little Words, Grands Amis',
-    image: '/images/liam-zoe.png',
+    image: '/images/little-words.png',
     slug: 'little-words',
+    url: 'https://amzn.to/3METjV3',
     description:
-      "This sweet bilingual children's book that helps children ages 3–7 discover basic vocabulary in English and French through playful dialogue and everyday moments. Follow Yukimitsu Books Instagram @yukimitsubooks for updates.",
-    tbr: true,
+      "This sweet bilingual children's book that helps children ages 3–7 discover basic vocabulary in English and French through playful dialogue and everyday moments. Follow Yukimitsu Books on Instagram @yukimitsubooks for updates.",
   },
   {
     name: 'Hey Vexa',

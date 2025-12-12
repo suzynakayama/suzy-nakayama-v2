@@ -102,10 +102,23 @@ export const books: Book[] = [
   },
   {
     name: 'Little Words, Grands Amis',
-    image: '/images/liam-zoe.png',
+    image: '/images/little-words.png',
     slug: 'little-words',
+    url: {
+      canada: {
+        btn: 'View book on Amazon CA',
+        link: 'https://amzn.to/3METjV3',
+      },
+      us: {
+        btn: 'View book on Amazon US',
+        link: 'https://amzn.to/4pPbAhn',
+      },
+      br: {
+        btn: 'View book on Amazon BR',
+        link: 'https://a.co/d/gUJbX6B',
+      },
+    },
     description:
       "This sweet bilingual children's book that helps children ages 3–7 discover basic vocabulary in English and French through playful dialogue and everyday moments.",
-    tbr: true,
   },
 ];
