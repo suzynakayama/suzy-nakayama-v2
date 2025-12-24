@@ -97,17 +97,17 @@ export const vibeCodingProjects: Projects = [
     difficulties: '',
     technologies: 'React, Typescript, Vibe Coding, Lovable AI.',
   },
-  {
-    name: 'Hey Vexa Landing Page',
-    image: '/images/hey-vexa.png',
-    slug: 'hey-vexa',
-    app: true,
-    url: 'https://heyvexa.netlify.app/',
-    description:
-      'Official landing page for Hey Vexa, my AI persona on YouTube and social media.',
-    difficulties: '',
-    technologies: 'React, Typescript, Vibe Coding, Lovable AI.',
-  },
+  // {
+  //   name: 'Hey Vexa Landing Page',
+  //   image: '/images/hey-vexa.png',
+  //   slug: 'hey-vexa',
+  //   app: true,
+  //   url: 'https://heyvexa.netlify.app/',
+  //   description:
+  //     'Official landing page for Hey Vexa, my AI persona on YouTube and social media.',
+  //   difficulties: '',
+  //   technologies: 'React, Typescript, Vibe Coding, Lovable AI.',
+  // },
 ];
 
 export const personalProjects: PersonalProjects = [
@@ -128,11 +128,11 @@ export const personalProjects: PersonalProjects = [
       "This sweet bilingual children's book that helps children ages 3–7 discover basic vocabulary in English and French through playful dialogue and everyday moments. Follow Yukimitsu Books on Instagram @yukimitsubooks for updates.",
   },
   {
-    name: 'Hey Vexa',
-    image: '/images/vexa.png',
-    slug: 'vexa',
-    url: 'https://www.youtube.com/@hey_vexa',
+    name: 'YouTube Channel',
+    image: '/images/youtube.png',
+    slug: 'youtube-channel',
+    // url: 'https://www.youtube.com/@hey_vexa',
     description:
-      'YouTube channel exploring human behavior through an AI persona. Also available in TikTok and Instagram @hey_vexa.',
+      'YouTube channel exploring human behavior through an AI persona. Also available in TikTok and Instagram.',
   },
 ];
