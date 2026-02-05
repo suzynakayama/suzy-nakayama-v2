@@ -18,15 +18,15 @@ export const books: Book[] = [
     slug: 'benny-en',
     url: {
       canada: {
-        btn: 'View book on Amazon CA',
-        link: 'https://amzn.to/4ifQaqF',
+        btn: 'Amazon 🇨🇦',
+        link: 'https://amzn.to/46q6ZdB',
       },
       us: {
-        btn: 'View book on Amazon US',
-        link: 'https://amzn.to/3XbiBwf',
+        btn: 'Amazon 🌎',
+        link: 'https://amzn.to/3NXfKFH',
       },
       br: {
-        btn: 'View book on Amazon BR',
+        btn: 'Amazon 🇧🇷',
         link: 'https://a.co/d/b1nrmtj',
       },
     },
@@ -39,15 +39,15 @@ export const books: Book[] = [
     slug: 'benny-pt',
     url: {
       canada: {
-        btn: 'Ver o livro na Amazon CA',
-        link: 'https://amzn.to/4rd2AUh',
+        btn: 'Amazon 🇨🇦',
+        link: 'https://amzn.to/3MqJUkb',
       },
       us: {
-        btn: 'Ver o livro na Amazon US',
-        link: 'https://amzn.to/48fOZ60',
+        btn: 'Amazon 🌎',
+        link: 'https://amzn.to/4a1d8PR',
       },
       br: {
-        btn: 'Ver o livro na Amazon BR',
+        btn: 'Amazon 🇧🇷',
         link: 'https://a.co/d/hQ6MdZa',
       },
     },
@@ -60,19 +60,15 @@ export const books: Book[] = [
     slug: 'benny-fr',
     url: {
       canada: {
-        btn: 'Voir le livre sur Amazon CA',
-        link: 'https://amzn.to/4aanvB8',
+        btn: 'Amazon 🇨🇦',
+        link: 'https://amzn.to/4r6ZPn4',
       },
       us: {
-        btn: 'Voir le livre sur Amazon US',
-        link: 'https://amzn.to/4pthNPl',
-      },
-      fr: {
-        btn: 'Voir le livre sur Amazon FR',
-        link: 'https://amzn.eu/d/hNl6exM',
+        btn: 'Amazon 🌎',
+        link: 'https://amzn.to/4tp4kLi',
       },
       br: {
-        btn: 'Voir le livre sur Amazon BR',
+        btn: 'Amazon 🇧🇷',
         link: 'https://a.co/d/5GHY5ld',
       },
     },
@@ -85,15 +81,15 @@ export const books: Book[] = [
     slug: 'benny-es',
     url: {
       canada: {
-        btn: 'Ver el libro en Amazon CA',
-        link: 'https://amzn.to/3K37HFR',
+        btn: 'Amazon 🇨🇦',
+        link: 'https://amzn.to/46AqXCr',
       },
       us: {
-        btn: 'Ver el libro en Amazon US',
-        link: 'https://amzn.to/4oemRGe',
+        btn: 'Amazon 🌎',
+        link: 'https://amzn.to/4qjXJis',
       },
       br: {
-        btn: 'Ver el libro en Amazon BR',
+        btn: 'Amazon 🇧🇷',
         link: 'https://a.co/d/1zF03Lz',
       },
     },
@@ -106,16 +102,16 @@ export const books: Book[] = [
     slug: 'little-words',
     url: {
       canada: {
-        btn: 'View book on Amazon CA',
-        link: 'https://amzn.to/3METjV3',
+        btn: 'Amazon 🇨🇦',
+        link: 'https://amzn.to/3Mf3TCf',
       },
       us: {
-        btn: 'View book on Amazon US',
-        link: 'https://amzn.to/4pPbAhn',
+        btn: 'Amazon 🌎',
+        link: 'https://amzn.to/3O8STXI',
       },
       br: {
-        btn: 'View book on Amazon BR',
-        link: 'https://a.co/d/gUJbX6B',
+        btn: 'Amazon 🇧🇷',
+        link: 'https://a.co/d/97EUVXC',
       },
     },
     description:

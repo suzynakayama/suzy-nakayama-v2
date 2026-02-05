@@ -115,7 +115,7 @@ export const personalProjects: PersonalProjects = [
     name: 'Benny and the Little Dirt Bug',
     image: '/images/benny.png',
     slug: 'benny',
-    url: 'https://amzn.to/4ifQaqF',
+    url: 'https://amzn.to/3NXfKFH',
     description:
       "A rhyming children's book about a super-bright adventure that turns daily hygiene into pure fun. Also available in Brazilian Portuguese, Spanish, and French. Follow Yukimitsu Books on Instagram @yukimitsubooks for updates.",
   },
@@ -123,7 +123,7 @@ export const personalProjects: PersonalProjects = [
     name: 'Little Words, Grands Amis',
     image: '/images/little-words.png',
     slug: 'little-words',
-    url: 'https://amzn.to/3METjV3',
+    url: 'https://amzn.to/3O8STXI',
     description:
       "This sweet bilingual children's book that helps children ages 3–7 discover basic vocabulary in English and French through playful dialogue and everyday moments. Follow Yukimitsu Books on Instagram @yukimitsubooks for updates.",
   },
