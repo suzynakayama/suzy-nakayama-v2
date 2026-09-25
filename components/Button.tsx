@@ -1,16 +1,33 @@
 import React from 'react';
 
+type ButtonVariant = 'primary' | 'ghost';
+
 interface ButtonProps {
   onClick?: () => void;
   children: React.ReactNode;
   className?: string;
+  variant?: ButtonVariant;
 }
 
-const Button = ({ onClick, children, className }: ButtonProps) => {
+export const buttonBase =
+  'inline-flex items-center justify-center gap-2 cursor-pointer rounded-full px-5 py-3 border-2 font-body text-xs font-bold uppercase tracking-[0.08em] transition-colors';
+
+export const buttonVariants: Record<ButtonVariant, string> = {
+  primary: 'bg-marigold border-marigold text-ink hover:bg-sky hover:border-sky',
+  ghost:
+    'bg-transparent border-ink-line-strong text-mist hover:bg-periwinkle hover:border-periwinkle hover:text-ink',
+};
+
+const Button = ({
+  onClick,
+  children,
+  className = '',
+  variant = 'ghost',
+}: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={`cursor-pointer p-2 rounded hover:bg-violet-light dark:hover:bg-black dark:hover:text-violet-light rounded-full transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-dark dark:focus-visible:outline-violet-light ${className}`}
+      className={`${buttonBase} ${buttonVariants[variant]} ${className}`}
     >
       {children}
     </button>
