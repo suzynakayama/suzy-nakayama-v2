@@ -1,9 +1,109 @@
 @import 'tailwindcss';
 
+/* Blue Hour palette */
 @theme {
-  --color-violet-light: #ede0ff;
-  --color-violet-dark: #523577;
+  --color-ink: #0a0a1a;
+  --color-ink-soft: #13132b;
+  --color-ink-line: #25254a;
+  --color-ink-line-strong: #3a3a6e;
+  --color-periwinkle: #7c8cff;
+  --color-sky: #5ccfff;
+  --color-marigold: #ffb020;
+  --color-mist: #eeeaf7;
+  --color-mist-soft: #a9a6c9;
+}
+
+/* Font variables come from next/font in src/app/layout.tsx */
+@theme inline {
+  --font-display: var(--ff-bagel), 'Arial Rounded MT Bold', system-ui, sans-serif;
+  --font-head: var(--ff-anton), Impact, 'Arial Narrow', sans-serif;
+  --font-body: var(--ff-grotesk), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--ff-mono), ui-monospace, Menlo, monospace;
+  --font-hand: var(--ff-caveat), 'Comic Sans MS', cursive;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
-@custom-variant light (&:where(:not(.dark), :not(.dark *)));
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-mist);
+    /* Blueprint grid: fine 42px lines with a stronger line every 5 cells */
+    background-image:
+      linear-gradient(rgb(124 140 255 / 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(124 140 255 / 0.08) 1px, transparent 1px),
+      linear-gradient(rgb(124 140 255 / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(124 140 255 / 0.04) 1px, transparent 1px);
+    background-size: 210px 210px, 210px 210px, 42px 42px, 42px 42px;
+    background-attachment: fixed;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-marigold);
+    outline-offset: 4px;
+  }
+
+  ::selection {
+    background: var(--color-marigold);
+    color: var(--color-ink);
+  }
+}
+
+@layer components {
+  /* Tilted handwritten annotation */
+  .hand-label {
+    font-family: var(--font-hand);
+    font-weight: 700;
+    color: var(--color-marigold);
+    display: inline-block;
+    line-height: 1;
+    transform: rotate(-5deg);
+  }
+
+  /* Soft drifting colour blob behind sections */
+  .blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(70px);
+    pointer-events: none;
+    animation: drift 16s ease-in-out infinite;
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-30px, 24px) scale(1.12);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(0.82);
+  }
+}
+
+@utility animate-twinkle {
+  animation: twinkle 3.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

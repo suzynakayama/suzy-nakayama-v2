@@ -1,19 +1,44 @@
 import type { Metadata } from 'next';
-import { Inter, Poppins } from 'next/font/google';
+import {
+  Anton,
+  Bagel_Fat_One,
+  Caveat,
+  JetBrains_Mono,
+  Space_Grotesk,
+} from 'next/font/google';
 import '../../styles/globals.css';
 import { ThemeProvider } from '../../components/ThemeProvider';
+import ScrollToTop from '../../components/ScrollToTop';
 import Script from 'next/script';
 
-const inter = Inter({
-  variable: '--font-body',
+const bagel = Bagel_Fat_One({
+  variable: '--ff-bagel',
   subsets: ['latin'],
-  weight: ['400', '500'],
+  weight: '400',
 });
 
-const poppins = Poppins({
-  variable: '--font-head',
+const anton = Anton({
+  variable: '--ff-anton',
   subsets: ['latin'],
-  weight: ['500', '600', '700'],
+  weight: '400',
+});
+
+const grotesk = Space_Grotesk({
+  variable: '--ff-grotesk',
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+});
+
+const mono = JetBrains_Mono({
+  variable: '--ff-mono',
+  subsets: ['latin'],
+  weight: ['400', '600'],
+});
+
+const caveat = Caveat({
+  variable: '--ff-caveat',
+  subsets: ['latin'],
+  weight: ['700'],
 });
 
 export const metadata: Metadata = {
@@ -30,7 +55,7 @@ const RootLayout = ({
   return (
     <html
       lang='en'
-      className={`${inter.variable} ${poppins.variable} min-h-fit scroll-smooth`}
+      className={`${bagel.variable} ${anton.variable} ${grotesk.variable} ${mono.variable} ${caveat.variable} dark min-h-fit scroll-smooth`}
       suppressHydrationWarning
     >
       <head>
@@ -48,8 +73,11 @@ const RootLayout = ({
             `}
         </Script>
       </head>
-      <body className='font-body transition-colors'>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className='font-body bg-ink text-mist antialiased'>
+        <ThemeProvider>
+          {children}
+          <ScrollToTop />
+        </ThemeProvider>
       </body>
     </html>
   );
